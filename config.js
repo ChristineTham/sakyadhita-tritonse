@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
     app: {
         env: process.env.NODE_ENV || "development",
-        port: process.env.PORT || 3000,
+        port: process.env.PORT || 5000,
     },
     // used for jwt
     auth: {
@@ -22,7 +22,7 @@ module.exports = {
     db: {
         host: process.env.DB_HOST || "localhost",
         user: process.env.DB_USER || "root",
-        password: process.env.DB_PASSWORD || "",
+        password: process.env.DB_PASSWORD || "lotus",
         name: process.env.DB_NAME || "sakyadhita",
     },
     // used for email automation

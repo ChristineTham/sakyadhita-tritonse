@@ -1,4 +1,6 @@
-# Running Locally
+# Fork of TritonSE's Sakyadhita Website Revamp
+
+Minimal changes (mainly to passwords and port numbers) to make it work. Requires Node 16.
 
 
 ## Express Server 

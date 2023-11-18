@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
     app: {
         env: process.env.NODE_ENV || "development",
-        port: process.env.PORT || 5000,
+        port: process.env.PORT || 3000,
     },
     // used for jwt
     auth: {
@@ -12,11 +12,11 @@ module.exports = {
     },
     // frontend URI
     frontend: {
-        uri: process.env.FRONTEND_URI || "http://localhost:3000/",
+        uri: process.env.FRONTEND_URI || "http://localhost:9000/",
     },
     // backend URI
     backend: {
-        uri: process.env.BACKEND_URI || "http://localhost:5000/",
+        uri: process.env.BACKEND_URI || "http://localhost:3000/",
     },
     // establish MySQL DB connection
     db: {

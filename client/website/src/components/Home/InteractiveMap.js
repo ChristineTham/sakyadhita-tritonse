@@ -21,7 +21,7 @@ import "../../css/InteractiveMap.css";
 
 // loads topological map information (continents/countries, general outline) using json request
 const geoUrl =
-    "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+    "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 // constrains panning extent of interactive map, preventing panning into whitespace
 const mapWidth = 800;
@@ -49,6 +49,7 @@ export default function InteractiveMap({ markers, disableZooming = false }) {
                             geographies.map((geo) => (
                                 <Geography
                                     key={geo.rsmKey}
+                                    fill="#BBDBF0"
                                     geography={geo}
                                     tabIndex={-1}
                                     style={{
